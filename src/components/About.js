@@ -1,8 +1,11 @@
+import React, { useState, useEffect } from "react";
+
 function About() {
-      
-    return (
-        <div>We are here to help you make better diet choices!</div>
-      )
-    }
-    
-    export default About;
+
+  return (
+    <div>The Holy Bible presented in a delightful way</div>
+  )
+
+}
+
+export default About;

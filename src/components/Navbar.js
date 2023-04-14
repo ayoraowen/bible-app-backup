@@ -17,7 +17,7 @@ function Navbar() {
         <nav className="navbar navbar-expand-lg">
             <div className="container-fluid nav-container">
                 <p className="navbar-brand">
-                    Nutrition.App
+                    Holy Scriptura.App
                 </p>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul className="navbar-nav">
@@ -39,6 +39,20 @@ function Navbar() {
 
                             <NavLink
                                 className="nav-link"
+                                to="/favourite-verses"
+                                exact
+                                // style={linkStyles}
+                                activeStyle={{
+                                  background: "green",
+                                }}
+                            >
+                            Favorite Verses
+                            </NavLink>
+                        </li>  
+                        <li className="nav-item"> 
+
+                            <NavLink
+                                className="nav-link"
                                 to="/about"
                                 exact
                                 // style={linkStyles}
@@ -46,21 +60,7 @@ function Navbar() {
                                   background: "green",
                                 }}
                             >
-                            About
-                            </NavLink>
-                        </li>  
-                        <li className="nav-item"> 
-
-                            <NavLink
-                                className="nav-link"
-                                to="/build-muscle"
-                                exact
-                                // style={linkStyles}
-                                activeStyle={{
-                                  background: "green",
-                                }}
-                            >
-                                BuildMuscle
+                                About Us
                             </NavLink>
                         </li>
                         <li className="nav-item">  
@@ -74,7 +74,7 @@ function Navbar() {
                                   background: "green",
                                 }}
                                 >
-                                GainWeight
+                                
                             </NavLink>
                         </li>    
                         <li className="nav-item">   
@@ -87,7 +87,7 @@ function Navbar() {
                                   background: "green",
                                 }}
                                 >
-                                LoseWeight
+                                
                             </NavLink>
                         </li>  
                     </ul>      
